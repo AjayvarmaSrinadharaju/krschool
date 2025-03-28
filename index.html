@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+</head>
+
+<body>
+  <seection>
+    <header class="header">
+      <img src="https://th.bing.com/th/id/OIP.490FzO7s749wpT0i5VzwMwHaHa?w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"/>
+                  <span class="brand-logo-name">
+                  SRI K.R. SCHOOL
+                   </span>
+        <nav class="navbar">
+            <ul class="navbar-lists" id="myTopnav">
+                <li>
+                      <i class="fas fa-home"></i>
+                          <a class="navbar-link home-link" href="#">
+                              Home</a>
+                  </li>
+                <li>
+                      <i class="fas fa-user"></i>
+                          <a class="navbar-link about-link" 
+                           href="#about-us-section">
+                              About Us
+                          </a>
+                </li>
+                <li>
+                      <i class="fas fa-envelope"></i>
+                          <a class="navbar-link contact-link" 
+                           href="#contactForm">
+                          Contact Us
+                          </a>
+                  </li>
+                <li>
+                      <i class="fas fa-bullhorn"></i>
+                          <a class="navbar-link service-link" 
+                           href="#notice-bord-sction">
+                          Notice Board
+                          </a>
+                  </li>
+                <li><i class="fas fa-map-marked-alt"></i>
+                      <a class="navbar-link contact-link"
+                       href="#campus-on-map">
+                      Our Campus
+                      </a>
+                  </li>
+            </ul>
+            <a href="javascript:void(0);" 
+               class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+        </a>
+         
+        </nav>
+    </header>
+    </seection>
+    <section>
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img  class="image-container"src="https://theknowledgereview.in/wp-content/uploads/2023/12/Sri-Krish-International-School.jpg" class="d-block w-100" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AB5caB_m3evym2tJmUiq64hwBoFbkh7TXBNJ3IINpf1mBNTL967Qthx2Medk0tDeOUIVePs2Y-dspDhmUUwwRi1zeW8q02fmAYS_8pP2Hszz_WOx-CpiqlHI7NBIoxCHqdeRxOV3ies=s1360-w1360-h1020" class="d-block w-100" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img src="https://lh3.googleusercontent.com/gps-cs-s/AB5caB-DvDzN3WVqzSvXIhUacezS6BYyGDFkBN8GHLzdtHDK-vcSd-KNhCI21345qnMRgGZBMqkjdQbPEmagXGbSs1Xuui52mZmSAlNmLnpE9yLxFlfLz8LbILfs1zvGzrCbHjCSTxG9FA=s1360-w1360-h1020" class="d-block w-100" alt="Third slide">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div>
+    </section>
+     
+    <main>
+
+        <section id="vision">
+          <div class="vision-container">
+            <h2 class="vision-heading">Our Vision</h2>
+            <p> 
+              A school's vision typically outlines its long-term goals and the values it strives to promote in its community. It's a statement that guides the overall direction of the school, focusing on the desired impact on students, staff, and the wider community. Here's a general structure of a school vision:
+
+Purpose: What the school aims to achieve for its students and community.
+
+Values: The core principles that guide the school's educational philosophy.
+
+Ambition: The future the school hopes to create for its students and the kind of citizens they hope to nurture.
+
+
+            </p>
+            </div>
+        </section>
+      <section>
+           
+                <h2 class="event-heading">Notice board</h2>
+                 <div class="event-details">
+                    <div class="event">
+                      <input type="text" id="taskInput" placeholder="Enter a new task...">
+                      <button onclick="addTask()">Add Task</button>
+                      <ul id="taskList"></ul>
+                  </div>
+                </div>
+    </section>
+
+                <!-- Events Section -->
+              
+                    <h2 class="event-heading">Upcoming Events</h2>
+                    <div class="event-details">
+                        <div class="event">
+                            <input type="text" id="eventInput" placeholder="Enter a new event">
+                            <button onclick="addEvent()">Add event</button>
+                            <ul id="eventList"></ul>
+                        </div>
+                    </div>
+                
+
+        <section id="about-us-section">
+          <h2 class="aboutus-heading">About Us</h2>
+            <div class="about-us-container">
+                <p>
+                    <strong class="subheading"> 
+                          Company Profile and Brand: 
+                      </strong>
+                     is a leading platform that 
+                      provides computer science resources and 
+                      coding challenges for programmers and 
+                      technology enthusiasts, along with interview
+                      and exam preparations for upcoming aspirants.
+                    With a strong emphasis on enhancing coding 
+                      skills and knowledge, it has become a trusted
+                      destination for over 12 million plus registered 
+                      users worldwide.
+                </p>
+            </div>
+        </section>
+        <section id="faq">
+          <div class="faq-container">
+            <h2 class="faq-heading">FAQ's</h2>
+          <details>
+              <summary>do you have transport  facility?</summary>
+              <p>Yes, we do. We cover almost a 30 km radius from the school.
+
+              </p>
+          </details>
+  
+          <details>
+              <summary>What will be the school timings?</summary>
+              <p>The school timings are from 9:10 AM to 4:30 PM for all grades.</p>
+          </details>
+          <details>
+            <summary>does have provide hostel facility?</summary>
+            <p>yes we provide hostel facilty is also available</p>
+        </details>
+  
+          <details>
+              <summary>What is the fee structure?</summary>
+              <p>For those seeking admissions, an informal interaction will be conducted in which the pupil and both parents must be present. <br/>The final decision of the admission committee will be binding.</p>
+          </details>
+          </div>
+      </section>
+
+        <section class="our-school-map" id="campus-on-map">
+            <h2 class="location-heading">
+                  Find Our Location On Map
+              </h2>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3828.852525466243!2d77.08935717514149!3d16.330477884387474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc831e4dc21604d%3A0xef465c17f71892!2sK%20R%20Higher%20primary%20Residential%20school!5e0!3m2!1sen!2sin!4v1742968859945!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    
+              </iframe>
+        </section>
+
+        <section id="contactForm">
+            <h2 class="contact-form-heading">
+              Contact Us Form
+              </h2>
+            <div class="container">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="fullName">
+                          Full Name
+                          </label>
+                        <input type="text" id="fullName" 
+                               name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email"
+                               name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" 
+                               name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" 
+                                  required>
+                          </textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+      <div clas=" footer-container">
+      <h3 class="footer-heading">sri kr School</h3>
+      <p>Phone: <a href="tel:+91 9676356907">+91 9676356907</a></p>
+      <p>Email: <a href="mailto:sri@krschool.com">srikr@school.com</a></p>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/xyzschool" target="_blank" title="Facebook">
+            <i class="fab fa-facebook-f"></i> <!-- Font Awesome Facebook Icon -->
+        </a>
+        <a href="https://www.twitter.com/xyzschool" target="_blank" title="Twitter">
+            <i class="fab fa-twitter"></i> <!-- Font Awesome Twitter Icon -->
+        </a>
+        <a href="https://www.instagram.com/xyzschool" target="_blank" title="Instagram">
+            <i class="fab fa-instagram"></i> <!-- Font Awesome Instagram Icon -->
+        </a>
+    </div>
+
+        <p>&copy; sri kr School. All rights reserved.</p>
+  </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
